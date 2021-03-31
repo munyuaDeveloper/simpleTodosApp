@@ -13,6 +13,7 @@ const insertTask = (taskText, user) =>
 
 const SEED_USERNAME = 'meteorite';
 const SEED_PASSWORD = 'password';
+const uri = process.env.MONGODB_URI;
 
 Meteor.startup(() => {
     if (!Accounts.findUserByUsername(SEED_USERNAME)) {
