@@ -1,6 +1,8 @@
 import { check } from 'meteor/check';
 import { TasksCollection } from '/imports/db/TasksCollection';
 
+
+
 Meteor.methods({
   'tasks.insert'(text) {
     check(text, String);
